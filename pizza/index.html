@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Мої улюблені Піци</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000; /* Чорний фон */
+      margin: 0;
+      padding: 0;
+      color: #f8f8f8; /* Світлий текст */
+    }
+    header, footer {
+      background-color: #d32f2f; /* Червоний */
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    main {
+      padding: 20px;
+    }
+    h1 {
+      font-size: 30px;
+      color: #ffeb3b; /* Жовтий */
+    }
+    h2 {
+      color: #c0392b; /* Червоний */
+    }
+    .pizza-item {
+      text-align: center; /* Центрування тексту */
+      margin-bottom: 20px;
+    }
+    .pizza-item h3 {
+      color: #d32f2f; /* Червоний */
+    }
+    .pizza-item img {
+      width: 400px; /* Збільшено розмір зображень */
+      height: auto;
+      display: block;
+      margin: 10px auto; /* Центрування зображення */
+      border: 2px solid #ffeb3b; /* Жовта рамка */
+    }
+    .ingredients {
+      text-align: center; /* Центрування інгредієнтів */
+    }
+    .ingredients ul {
+      list-style: none;
+      padding: 0;
+      display: inline-block;
+      text-align: left; /* Залишкове вирівнювання списку */
+    }
+    .contact-form label {
+      display: block;
+      margin-top: 10px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #ffeb3b; /* Жовтий */
+      color: #d32f2f; /* Червоний */
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #d32f2f; /* Червоний */
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Піци</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Головна</a></li>
+        <li><a href="#">Піци</a></li>
+        <li><a href="#contact">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Мой улюблені Піци</h2>
+      <!-- Сирна піца -->
+      <div class="pizza-item">
+        <h3>Сирна Піца</h3>
+        <img src="https://media.istockphoto.com/id/1393150881/photo/italian-pizza-margherita-with-cheese-and-tomato-sauce-on-the-board-on-grey-table-macro-close.jpg?s=612x612&w=0&k=20&c=kL0Vhg2XKBjEl__iG8sFv31WTiahdpLc3rTDtNZuD2g=" alt="Сирна піца">
+        <div class="ingredients">
+          <h4>Інгредієнти:</h4>
+          <ul>
+            <li>Томатний соус</li>
+            <li>Сир моцарела</li>
+            <li>Сир чеддер</li>
+            <li>Пармезан</li>
+            <li>Орегано</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Гавайська піца -->
+      <div class="pizza-item">
+        <h3>Гавайська Піца</h3>
+        <img src="https://www.allrecipes.com/thmb/v1Xi2wtebK1sZwSJitdV4MGKl1c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hawaiian-pizza-ddmfs-3x2-132-450eff04ad924d9a9eae98ca44e3f988.jpg" alt="Гавайська піца">
+        <div class="ingredients">
+          <h4>Інгредієнти:</h4>
+          <ul>
+            <li>Томатний соус</li>
+            <li>Сир моцарела</li>
+            <li>Шинка</li>
+            <li>Ананас</li>
+            <li>Орегано</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакти -->
+    <section id="contact">
+      <h2>Контакти</h2>
+      <div class="contact-form">
+        <form>
+          <label for="name">Ваше Ім'я:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Ваше Повідомлення:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Надіслати</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Піци. Всі права захищені.</p>
+  </footer>
+</body>
+</html>
